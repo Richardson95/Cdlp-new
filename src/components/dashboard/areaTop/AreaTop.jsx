@@ -13,6 +13,7 @@ const AreaTop = () => {
   return (
     <div className="top-area-container">
       <div className="top-bar">
+        <MdOutlineMenu className="hamburger-icon" onClick={openSidebar} />
         <div className="top-bar-right">
           <div className="top-sections">
             <div className="whatsapp-connect">
@@ -20,13 +21,10 @@ const AreaTop = () => {
               <span>Connect on whatsapp</span>
               <IoIosArrowDown className="dropdown-icon" />
             </div>
-
             <div className="separator"></div>
-
             <div className="notification-wrapper">
               <IoNotificationsOutline className="notification-icon" />
             </div>
-
             <div className="profile-wrapper">
               <div className="profile-avatar">
                 <span>P</span>
@@ -36,7 +34,6 @@ const AreaTop = () => {
           </div>
         </div>
       </div>
-
       <section className="content-area-top">
         <div className="area-top-l">
           <h2 className="area-top-title">Hello Peace</h2>

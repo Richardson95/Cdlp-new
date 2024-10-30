@@ -3,10 +3,10 @@ import { ThemeContext } from "../../context/ThemeContext";
 import { BiWallet } from 'react-icons/bi';
 import { HiOutlineUserGroup } from 'react-icons/hi';
 import { BiMessageRoundedDots } from 'react-icons/bi';
-import { RiFileListLine } from 'react-icons/ri';
-import { RiRobotLine } from 'react-icons/ri';
+import { RiFileListLine, RiRobotLine } from 'react-icons/ri';
 import { LIGHT_THEME } from "../../constants/themeConstants";
 import LogoBlue from "../../assets/images/logo.png";
+import App from "../../assets/images/stores.png";
 import {
   MdOutlineAttachMoney,
   MdOutlineBarChart,
@@ -69,37 +69,37 @@ const Sidebar = () => {
               </Link>
             </li>
             <li className="menu-item">
-  <Link to="/" className="menu-link">
-    <span className="menu-link-icon">
-      <BiWallet size={20} />
-    </span>
-    <span className="menu-link-text">Wallet</span>
-  </Link>
-</li>
+              <Link to="/" className="menu-link">
+                <span className="menu-link-icon">
+                  <BiWallet size={20} />
+                </span>
+                <span className="menu-link-text">Wallet</span>
+              </Link>
+            </li>
             <li className="menu-item">
-  <Link to="/" className="menu-link">
-    <span className="menu-link-icon">
-      <HiOutlineUserGroup size={20} />
-    </span>
-    <span className="menu-link-text">Services</span>
-  </Link>
-</li>
-          <li className="menu-item">
-  <Link to="/" className="menu-link">
-    <span className="menu-link-icon">
-      <RiRobotLine size={20} />
-    </span>
-    <span className="menu-link-text">Developers</span>
-  </Link>
-</li>
-           <li className="menu-item">
-  <Link to="/" className="menu-link">
-    <span className="menu-link-icon">
-      <RiFileListLine size={18} />
-    </span>
-    <span className="menu-link-text">Transaction History</span>
-  </Link>
-</li>
+              <Link to="/" className="menu-link">
+                <span className="menu-link-icon">
+                  <HiOutlineUserGroup size={20} />
+                </span>
+                <span className="menu-link-text">Services</span>
+              </Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/" className="menu-link">
+                <span className="menu-link-icon">
+                  <RiRobotLine size={20} />
+                </span>
+                <span className="menu-link-text">Developers</span>
+              </Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/" className="menu-link">
+                <span className="menu-link-icon">
+                  <RiFileListLine size={18} />
+                </span>
+                <span className="menu-link-text">Transaction History</span>
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -107,14 +107,14 @@ const Sidebar = () => {
         <h4 className="menu-header">OTHERS</h4>
         <div className="sidebar-menu">
           <ul className="menu-list">
-          <li className="menu-item">
-  <Link to="/" className="menu-link">
-    <span className="menu-link-icon">
-      <BiMessageRoundedDots size={20} />
-    </span>
-    <span className="menu-link-text">Help & Support</span>
-  </Link>
-</li>
+            <li className="menu-item">
+              <Link to="/" className="menu-link">
+                <span className="menu-link-icon">
+                  <BiMessageRoundedDots size={20} />
+                </span>
+                <span className="menu-link-text">Help & Support</span>
+              </Link>
+            </li>
             <li className="menu-item">
               <Link to="/" className="menu-link">
                 <span className="menu-link-icon">
@@ -136,7 +136,7 @@ const Sidebar = () => {
 
         {/* Simple Image Container */}
         <div className="app-image-container">
-          <img src="src/assets/images/stores.png" alt="App download" />
+          <img src={App} alt="App download" />
         </div>
       </div>
     </nav>

@@ -47,6 +47,86 @@ const WalletDashboard = () => {
 
   return (
     <div className="wallet-dashboard">
+      <style>
+        {`
+          .button--outline.wallet:hover,
+          .button--primary:hover,
+          .button--outline.cashback:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 120, 0.1);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          }
+
+          .button--outline.wallet:active,
+          .button--primary:active,
+          .button--outline.cashback:active {
+            transform: translateY(1px);
+          }
+
+          .card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-origin: center center;
+            cursor: pointer;
+          }
+
+          .card--wallet:hover {
+            transform: translateX(-5px) translateY(-5px);
+            box-shadow: 15px 15px 30px rgba(0, 0, 120, 0.1);
+            animation: cardFloat 3s ease-in-out infinite;
+          }
+
+          .card--cashback:hover {
+            transform: translateX(5px) translateY(-5px);
+            box-shadow: -15px 15px 30px rgba(169, 104, 173, 0.1);
+            animation: cardFloat 3s ease-in-out infinite;
+          }
+
+          @keyframes cardFloat {
+            0% {
+              transform: translateY(-5px);
+            }
+            50% {
+              transform: translateY(0px);
+            }
+            100% {
+              transform: translateY(-5px);
+            }
+          }
+
+          .card:hover .card__header-icon {
+            animation: iconPulse 1.5s ease-in-out infinite;
+          }
+
+          @keyframes iconPulse {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.1);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+
+          .card:hover .card__balance {
+            animation: balancePop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          }
+
+          @keyframes balancePop {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.05);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+        `}
+      </style>
+      
       <div className="wallet-dashboard__header">
         <h2 className="wallet-title">My Wallets</h2>
         <a href="#" className="see-all">
@@ -139,9 +219,9 @@ const WalletDashboard = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <line x1="22" y1="2" x2="11" y2="13"></line>
                 <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>

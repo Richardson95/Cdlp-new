@@ -1,12 +1,16 @@
 import React from "react";
-import "./AreaCharts.scss"; // Make sure to create this SCSS file as well
+import "./AreaCharts.scss";
+import DataIcon from "../../../assets/icons/Data.png";
+import TopupIcon from "../../../assets/icons/Airtimee.png";
+import ElectricityIcon from "../../../assets/icons/Electricity.png";
+import InternetIcon from "../../../assets/icons/internet.png";
 
 const AreaBarChart = () => {
   const services = [
-    { name: "Data Purchase", icon: "src/assets/icons/Data.png" },
-    { name: "Airtime Topup", icon: "src/assets/icons/Airtimee.png" },
-    { name: "Electricity", icon: "src/assets/icons/Electricity.png" },
-    { name: "Broadband Internet", icon: "src/assets/icons/internet.png" },
+    { name: "Data Purchase", icon: DataIcon },
+    { name: "Airtime Topup", icon: TopupIcon },
+    { name: "Electricity", icon: ElectricityIcon },
+    { name: "Broadband Internet", icon: InternetIcon },
   ];
 
   return (
