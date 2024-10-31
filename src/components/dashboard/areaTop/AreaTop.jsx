@@ -12,8 +12,8 @@ const AreaTop = () => {
   const [isWhatsappOpen, setIsWhatsappOpen] = useState(false);
 
   const phoneContacts = [
-    { id: 1, number: '+1 234 567 8900' },
-    { id: 2, number: '+1 987 654 3210' }
+    { id: 1, number: '+234 903 908 7940' },
+    { id: 2, number: '+234 903 908 7940' }
   ];
 
   return (
